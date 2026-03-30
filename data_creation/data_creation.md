@@ -20,6 +20,7 @@ logging.info("Pipeline started")
 ```python
 import pandas as pd
 
+#raw data files
 team_raw = pd.read_csv("/Users/leahkim/Desktop/project1-sports-outcomes/raw/team.csv")
 game_raw = pd.read_csv("/Users/leahkim/Desktop/project1-sports-outcomes/raw/game.csv")
 line_score_raw = pd.read_csv("/Users/leahkim/Desktop/project1-sports-outcomes/raw/line_score.csv")
@@ -280,17 +281,30 @@ A logistic regression model is used to predict the probability of a team winning
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
+# Separate features (X) and target variable (y)
+# X contains all predictor variables, y is the win/loss outcome
 X = df_model.drop("win_flag", axis=1)
 y = df_model["win_flag"]
 
+# Split the data into training and testing sets
+# 80% for training, 20% for testing the model
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
+# Initialize the logistic regression model
+# max_iter is increased to ensure the model converges
 model = LogisticRegression(max_iter=1000)
+
+# Train the model using the training data
 model.fit(X_train, y_train)
 
+# Evaluate the model using the test data
+# This returns the accuracy (percentage of correct predictions)
 accuracy = model.score(X_test, y_test)
+
+# Print the model accuracy
 print("Model Accuracy:", accuracy)
 
+# Log that the model training step completed successfully
 logging.info("Model trained successfully")
 ```
 
@@ -310,8 +324,10 @@ Overall, this comparison shows that increasing model complexity does not always 
 
 ```python
 try:
+    # Log the start of the model training process
     logging.info("Starting model training")
 
+    # Import required libraries for modeling and evaluation
     from sklearn.model_selection import train_test_split, GridSearchCV
     from sklearn.linear_model import LogisticRegression
     from sklearn.ensemble import RandomForestClassifier
@@ -320,33 +336,46 @@ try:
     import pandas as pd
     import matplotlib.pyplot as plt
 
+    # Select feature columns used to predict game outcomes
     feature_cols = ["fg_pct", "ft_pct", "fg3_pct", "ast", "reb", "tov"]
 
+    # Separate predictors (X) and target variable (y)
     X = df_model[feature_cols]
     y = df_model["win_flag"]
 
+    # Split data into training and testing sets (80/20 split)
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
 
+    # Standardize features for logistic regression (important for model performance)
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
 
+    # Train baseline logistic regression model
+    # This model predicts win/loss and outputs probabilities
     log_model = LogisticRegression(max_iter=1000, C=1.0)
     log_model.fit(X_train_scaled, y_train)
+
+    # Generate predictions and probabilities
     log_preds = log_model.predict(X_test_scaled)
     log_probs = log_model.predict_proba(X_test_scaled)[:, 1]
+
+    # Evaluate baseline model performance
     log_accuracy = accuracy_score(y_test, log_preds)
 
     print("Baseline Logistic Regression Accuracy:", log_accuracy)
     print("Baseline Logistic Regression ROC AUC:", roc_auc_score(y_test, log_probs))
 
+    # Define parameter grid for hyperparameter tuning
+    # This tests different values of regularization strength and solver
     param_grid = {
         "C": [0.01, 0.1, 1, 10],
         "solver": ["lbfgs", "liblinear"]
     }
 
+    # Perform grid search with cross-validation to find best model parameters
     grid = GridSearchCV(
         LogisticRegression(max_iter=1000),
         param_grid,
@@ -355,26 +384,37 @@ try:
     )
     grid.fit(X_train_scaled, y_train)
 
+    # Use the best model from grid search
     best_log_model = grid.best_estimator_
+
+    # Evaluate tuned model
     best_preds = best_log_model.predict(X_test_scaled)
     best_probs = best_log_model.predict_proba(X_test_scaled)[:, 1]
 
     print("\nBest Logistic Parameters:", grid.best_params_)
     print("Tuned Logistic Accuracy:", accuracy_score(y_test, best_preds))
     print("Tuned Logistic ROC AUC:", roc_auc_score(y_test, best_probs))
+
+    # Print detailed evaluation metrics
     print("\nConfusion Matrix:\n", confusion_matrix(y_test, best_preds))
     print("\nClassification Report:\n", classification_report(y_test, best_preds))
 
+    # Train a Random Forest model for comparison
+    # This model can capture more complex, non-linear relationships
     rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
     rf_model.fit(X_train, y_train)
+
+    # Evaluate Random Forest model
     rf_preds = rf_model.predict(X_test)
     rf_accuracy = accuracy_score(y_test, rf_preds)
 
     print("Random Forest Accuracy:", rf_accuracy)
 
+    # Log successful completion of modeling section
     logging.info("Model training and evaluation completed successfully")
 
 except Exception as e:
+    # Log error if anything fails during model training
     logging.exception("Model training section failed")
     print(f"Error during model training: {e}")
 ```
