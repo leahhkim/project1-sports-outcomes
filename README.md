@@ -9,7 +9,7 @@ This repository presents a data science project focused on analyzing NBA team pe
 |----------------|-------|
 | Name           | Leah Kim |
 | NetID          | sxk2eh |
-| DOI            | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
+| DOI            | [https://doi.org/10.5281/zenodo.19325264](https://doi.org/10.5281/zenodo.19325264) |
 | Press Release  | [Can Data Predict the Winner? A Smarter Way for Fans to Estimate NBA Win Probability](press-release/press_release.md)  |
 | Data           | [Link to data folder](https://myuva-my.sharepoint.com/:f:/g/personal/sxk2eh_virginia_edu/IgAsD5kURxZAQrhBUOhVSO1TAUpJ-jHaiOW6kVrLLTkeywg?e=nCollH) |
 | Pipeline       | [data_creation.ipynb](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.ipynb), [data_creation.py](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.py), [data_creation.md](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.md)
