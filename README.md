@@ -12,7 +12,7 @@ This repository presents a data science project focused on analyzing NBA team pe
 | DOI            | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
 | Press Release  | [Can Data Predict the Winner? A Smarter Way for Fans to Estimate NBA Win Probability](press-release/press_release.md)  |
 | Data           | [Link to data folder](https://myuva-my.sharepoint.com/:f:/g/personal/sxk2eh_virginia_edu/IgAsD5kURxZAQrhBUOhVSO1TAUpJ-jHaiOW6kVrLLTkeywg?e=nCollH) |
-| Pipeline       | [data_creation.ipynb](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.ipynb), [data_creation.py](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.py)
+| Pipeline       | [data_creation.ipynb](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.ipynb), [data_creation.py](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.py), [data_creation.md](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.md)
  | License        | [MIT](LICENSE) |
 
 ## Problem Definition
@@ -70,6 +70,7 @@ To create the dataset for this project, I used a publicly available dataset from
 | File | Brief Description | Link |
 |---|---|---|
 | `data_creation/data_creation.ipynb` | Jupyter notebook used to explore the raw NBA data, inspect available tables, and develop the data creation pipeline before converting it into a structured script. | [data_creation.ipynb](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.ipynb) |
+| `data_creation/data_creation.md` | Markdown version of the data creation notebook that documents the full pipeline in a clean, readable format without requiring execution. | [data_creation.md](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.md) |
 | `data_creation/data_creation.py` | Python script used to clean, transform, and construct the final relational dataset (teams, seasons, games, and team_game_stats) from the raw data in a reproducible pipeline. | [data_creation.py](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/data_creation.py) |
 | `data_creation/schema.sql` | SQL file defining the relational structure of the project dataset, including the tables and keys used to organize the data. | [schema.sql](https://github.com/leahhkim/project1-sports-outcomes/blob/main/data_creation/schema.sql) |
 
