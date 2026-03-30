@@ -46,18 +46,18 @@ This project lives in the domain of sports analytics and predictive modeling. Sp
 
 ### Background Reading
 
-[Link to Background Readings](https://drive.google.com/drive/folders/1WxjkUfuYz4fxsjhXomoav8JjU9VPI8D0?usp=sharing)
+[Link to Background Readings](https://myuva-my.sharepoint.com/:f:/g/personal/sxk2eh_virginia_edu/IgD6NQFI-nvgRLVp588b3Yk9AZ_KRLKSyf6aixQBDvNnxeA?e=9wl6Ft)
 
 
 ### Readings Summary
 
 | Title | Brief Description | Link to File |
 |---|---|---|
-| Introduction to Oliver’s Four Factors | Explains the four key factors that influence basketball success: shooting efficiency, turnovers, rebounding, and free throws. These metrics are widely used in basketball analytics and help explain which statistics are important when predicting game outcomes. | [Open file](https://drive.google.com/file/d/1c7rQsmionXJe8h1elbX1maftxi6zNQmL/view?usp=drive_link) |
-| Predicting the Outcome of NBA Games | Discusses statistical and machine learning approaches used to predict NBA game results using historical game data. This helps provide background on how past performance statistics can be used to model win probability. | [Open file](https://drive.google.com/file/d/1V-LcuDNfcShLB-RsMAJNwNsZlVaCDFpZ/view?usp=drive_link) |
-| Predictive Analysis of NBA Game Outcomes through Machine Learning | Describes how machine learning models can be applied to NBA datasets to predict game outcomes and identify important predictive features. This reading helps connect the project to predictive modeling methods used in sports analytics. | [Open file](https://drive.google.com/file/d/1lvkuY0EsqdE4XByg8_mG119dFUMKTqse/view?usp=drive_link) |
-| Integration of Machine Learning XGBoost and SHAP Models for NBA Game Outcome Prediction | Examines how advanced machine learning models can identify which game statistics have the strongest impact on predicting NBA wins and losses. It helps explain which variables may be important for building a win probability score. | [Open file](https://drive.google.com/file/d/1wWRTCSpblBgSsCU2fUlyXI1QlVUbeQuB/view?usp=drive_link) |
-| Machine Learning for Basketball Game Outcomes | Provides an overview of different machine learning techniques used to analyze basketball data and predict game outcomes. This source helps show how predictive analytics is used in sports analytics research. | [Open file](https://drive.google.com/file/d/13Ra81jCVbFb_L8pryX9TZQL12gJiMZpV/view?usp=drive_link) |
+| Introduction to Oliver’s Four Factors | Explains the four key factors that influence basketball success: shooting efficiency, turnovers, rebounding, and free throws. These metrics are widely used in basketball analytics and help explain which statistics are important when predicting game outcomes. | [Open file](https://myuva-my.sharepoint.com/:b:/g/personal/sxk2eh_virginia_edu/IQC4V6aXwPVYQbg5prkCGIiRAQSCz1e0Ev-3j989GNXufS8?e=YbHGLW) |
+| Predicting the Outcome of NBA Games | Discusses statistical and machine learning approaches used to predict NBA game results using historical game data. This helps provide background on how past performance statistics can be used to model win probability. | [Open file](https://myuva-my.sharepoint.com/:b:/g/personal/sxk2eh_virginia_edu/IQBO5hU57eVdSLHXDlW6FhtyAWXzFS6LxHAeSUOvxUqSmAo?e=OiNeI3) |
+| Predictive Analysis of NBA Game Outcomes through Machine Learning | Describes how machine learning models can be applied to NBA datasets to predict game outcomes and identify important predictive features. This reading helps connect the project to predictive modeling methods used in sports analytics. | [Open file](https://myuva-my.sharepoint.com/:b:/g/personal/sxk2eh_virginia_edu/IQDplW1D_QtrQ6h87IL86AJlASsjUG_umCrcyFJW3OdvTFQ?e=TdotMa) |
+| Integration of Machine Learning XGBoost and SHAP Models for NBA Game Outcome Prediction | Examines how advanced machine learning models can identify which game statistics have the strongest impact on predicting NBA wins and losses. It helps explain which variables may be important for building a win probability score. | [Open file](https://myuva-my.sharepoint.com/:b:/g/personal/sxk2eh_virginia_edu/IQCjTrKX3U76Ra2LWczOFQ2GAVL7lj7b2RHJBPE9w_UC9R0?e=OcLhtE) |
+| Machine Learning for Basketball Game Outcomes | Provides an overview of different machine learning techniques used to analyze basketball data and predict game outcomes. This source helps show how predictive analytics is used in sports analytics research. | [Open file](https://myuva-my.sharepoint.com/:b:/g/personal/sxk2eh_virginia_edu/IQANbSGV7u4MQZP0-3ak0ifHAeo7a-jPS-4kpseph5dKpNA?e=WGtmWK) |
 
 
 ## Data Creation
