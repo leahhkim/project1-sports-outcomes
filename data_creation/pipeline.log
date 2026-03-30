@@ -1,0 +1,30 @@
+2026-03-24 16:05:10,395 - INFO - Pipeline started
+2026-03-24 16:05:11,294 - INFO - NumExpr defaulting to 8 threads.
+2026-03-24 16:05:13,091 - INFO - Raw data loaded successfully
+2026-03-24 16:05:14,290 - INFO - Tables created successfully
+2026-03-24 16:05:15,155 - INFO - Data loaded into DuckDB
+2026-03-24 16:09:03,316 - INFO - Pipeline started
+2026-03-24 16:09:04,246 - INFO - Raw data loaded successfully
+2026-03-24 16:09:05,405 - INFO - Tables created successfully
+2026-03-24 16:09:05,608 - INFO - Data loaded into DuckDB
+2026-03-24 16:24:23,195 - INFO - Model trained successfully
+2026-03-24 16:26:59,084 - INFO - Improved models trained successfully
+2026-03-25 21:00:48,237 - INFO - Pipeline started
+2026-03-25 21:00:49,930 - INFO - Raw data loaded successfully
+2026-03-25 21:00:52,099 - INFO - Tables created successfully
+2026-03-25 21:00:52,418 - INFO - Data loaded into DuckDB
+2026-03-25 21:00:53,794 - INFO - Model trained successfully
+2026-03-25 21:01:12,681 - INFO - Advanced model evaluation completed successfully
+2026-03-25 21:25:45,981 - INFO - All tables loaded into DuckDB
+2026-03-27 13:57:11,440 - INFO - Pipeline started
+2026-03-27 13:57:12,448 - INFO - Starting data creation section
+2026-03-27 13:57:12,901 - INFO - Raw files loaded successfully
+2026-03-27 13:57:12,935 - INFO - Teams table created
+2026-03-27 13:57:12,948 - INFO - Seasons table created
+2026-03-27 13:57:13,380 - INFO - Games table created
+2026-03-27 13:57:13,516 - INFO - Team game stats table created
+2026-03-27 13:57:14,619 - INFO - All output files saved successfully
+2026-03-27 13:57:14,937 - INFO - All tables loaded into DuckDB
+2026-03-27 13:57:17,085 - INFO - Model trained successfully
+2026-03-27 13:57:17,202 - INFO - Starting model training
+2026-03-27 13:57:43,605 - INFO - Model training and evaluation completed successfully
